@@ -1,0 +1,72 @@
+---
+title       : Mid-Atlantic Wage Data
+subtitle    : Plotting different variables
+author      : Chiccueri
+job         : Developing Data Products
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+
+
+---
+
+## Libraries and data sets
+
+
+```r
+library(caret)
+library(ggplot2)
+library(ISLR)
+data(Wage)
+
+choices <- c("year", "age", "sex", "maritl", "race", "education", "job class", 
+    "health")
+mw <- mean(Wage$wage)
+md <- median(Wage$wage)
+par(cex.axis = 0.7)
+```
+
+---
+
+## Plot (wage vs age)
+
+```r
+plot(Wage[, choices[2]], Wage$wage, xlab = choices[2], ylab = "wage", main = "Wage")
+lines(c(0, 100), c(mw, mw), col = "red", lwd = 3)
+```
+
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
+
+```r
+width = 50
+```
+
+---
+
+## Plot (wage vs education)
+
+```r
+plot(Wage[, choices[6]], Wage$wage, xlab = choices[6], ylab = "wage", main = "Wage")
+lines(c(0, 100), c(mw, mw), col = "red", lwd = 3)
+```
+
+![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png) 
+
+---
+
+## Plot (wage vs job class)
+
+```r
+plot(Wage[, choices[8]], Wage$wage, xlab = choices[8], ylab = "wage", main = "Wage")
+lines(c(0, 100), c(mw, mw), col = "red", lwd = 3)
+```
+
+![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4.png) 
+
+
