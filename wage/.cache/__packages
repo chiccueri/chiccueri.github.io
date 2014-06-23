@@ -4,6 +4,7 @@ devtools
 ggplot2
 ISLR
 lattice
+RColorBrewer
 shiny
 shinyapps
 slidify

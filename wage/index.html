@@ -43,10 +43,13 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Introduction</h2>
+    <h2>Presentation</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>From Mid-Atlantic Wage data set (containing wage and other data for a group of 3000 male workers in the Mid-Atlantic region) I build a simple application with Shiny that allows to chose the variable to match with the wage and show the related plot.  </p>
+
+<p>For every plot, flagging the voice on the left, it&#39;s possible to show a red line indicating the level of the calculated average wage.</p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -56,9 +59,7 @@
     <h2>Libraries and data sets</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">library(caret)
-library(ggplot2)
-library(ISLR)
+    <pre><code class="r">library(ISLR)
 data(Wage)
 
 choices &lt;- c(&quot;year&quot;, &quot;age&quot;, &quot;sex&quot;, &quot;maritl&quot;, &quot;race&quot;, &quot;education&quot;, &quot;job class&quot;, 
@@ -126,7 +127,7 @@ lines(c(0, 100), c(mw, mw), col = &quot;red&quot;, lwd = 3)
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Introduction'>
+        data-slide=1 title='Presentation'>
          1
       </a>
     </li>

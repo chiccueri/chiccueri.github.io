@@ -11,8 +11,11 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Introduction
+## Presentation
 
+From Mid-Atlantic Wage data set (containing wage and other data for a group of 3000 male workers in the Mid-Atlantic region) I build a simple application with Shiny that allows to chose the variable to match with the wage and show the related plot.  
+
+For every plot, flagging the voice on the left, it's possible to show a red line indicating the level of the calculated average wage.
 
 ---
 
@@ -20,8 +23,6 @@ knit        : slidify::knit2slides
 
 
 ```r
-library(caret)
-library(ggplot2)
 library(ISLR)
 data(Wage)
 
@@ -31,6 +32,7 @@ mw <- mean(Wage$wage)
 md <- median(Wage$wage)
 par(cex.axis = 0.7)
 ```
+
 
 ---
 
@@ -47,6 +49,7 @@ lines(c(0, 100), c(mw, mw), col = "red", lwd = 3)
 width = 50
 ```
 
+
 ---
 
 ## Plot (wage vs education)
@@ -57,6 +60,7 @@ lines(c(0, 100), c(mw, mw), col = "red", lwd = 3)
 ```
 
 ![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png) 
+
 
 ---
 
