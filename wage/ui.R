@@ -10,12 +10,12 @@ shinyUI (pageWithSidebar (
                  choices=list("year"=1, "age"=2, "maritl"=4, "race"=5,
                               "education"=6, "job class"=8, "health"=9),
                  selected=2),
-    selectInput("var2", label="Choose a second variable to spread the plot by color",
-                choices=list("year"=1, "age"=2, "maritl"=4, "race"=5,
-                             "education"=6, "job class"=8, "health"=9),
-                selected=6),
-    checkboxInput("cbmean", label = "Show wage mean (red line)", value=TRUE),
-    checkboxInput("legend", label = "Show the legend", value=FALSE)
+#    selectInput("var2", label="Choose a second variable to spread the plot by color",
+#                choices=list("year"=1, "age"=2, "maritl"=4, "race"=5,
+#                             "education"=6, "job class"=8, "health"=9),
+#                selected=6),
+    checkboxInput("cbmean", label = "Show wage mean (red line)", value=TRUE)
+#    checkboxInput("legend", label = "Show the legend", value=FALSE)
 #    checkboxInput("cbmedian", label = "Show wage median (black line)", value=TRUE)
 #   sliderInput('color', 'chose the color', value=1, min=0, max=2, step=0.1)
   ),
