@@ -62,15 +62,3 @@ lines(c(0, 100), c(mw, mw), col = "red", lwd = 3)
 ![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3.png) 
 
 
----
-
-## Plot (wage vs job class)
-
-```r
-plot(Wage[, choices[8]], Wage$wage, xlab = choices[8], ylab = "wage", main = "Wage")
-lines(c(0, 100), c(mw, mw), col = "red", lwd = 3)
-```
-
-![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4.png) 
-
-

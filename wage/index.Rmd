@@ -49,11 +49,3 @@ plot(Wage[,choices[6]], Wage$wage, xlab=choices[6], ylab="wage", main ='Wage')
 lines(c(0,100), c(mw,mw), col="red", lwd =3)
 ```
 
----
-
-## Plot (wage vs job class)
-```{r fig.height=6}
-plot(Wage[,choices[8]], Wage$wage, xlab=choices[8], ylab="wage", main ='Wage')
-lines(c(0,100), c(mw,mw), col="red", lwd =3)
-```
-
